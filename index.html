@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greek Transformational Retreat · 28.9. – 7.10. 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --aegean: #4A8BAD;
+    --aegean-light: #D4E8F0;
+    --sky: #F4F9FB;
+    --marble: #FAFAF8;
+    --white: #FFFFFF;
+    --sand: #FAF7F2;
+    --olive: #7A9460;
+    --gold: #C4A052;
+    --gold-light: #FBF5E6;
+    --text: #1E2B35;
+    --mid: #6A7D89;
+    --terracotta: #C0644A;
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Jost', sans-serif; background: var(--white); color: var(--text); font-weight: 300; line-height: 1.8; overflow-x: hidden; }
+
+  /* ── LANG TOGGLE ── */
+  .lang-toggle {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.5rem;
+    z-index: 100;
+    display: flex;
+    gap: 0;
+    background: rgba(255,255,255,0.92);
+    border: 1px solid var(--aegean-light);
+    border-radius: 100px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+
+  .lang-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--mid);
+    font-family: 'Jost', sans-serif;
+    transition: all 0.2s;
+  }
+
+  .lang-btn.active {
+    background: var(--aegean);
+    color: #fff;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 5rem;
+    overflow: hidden;
+  }
+
+  .hero-img {
+    position: absolute; inset: 0;
+    background: url('https://drive.google.com/thumbnail?id=1fyKzPGiruuR4I4Jp0vIGbpGzflHUf9ME&sz=w1800') center/cover no-repeat;
+  }
+
+  .hero-img::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 40%, rgba(255,255,255,0.88) 78%, rgba(255,255,255,1) 100%);
+  }
+
+  .hero-content {
+    position: relative; z-index: 1;
+    text-align: center;
+    max-width: 720px;
+    padding: 0 2rem;
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--aegean);
+    margin-bottom: 1rem;
+  }
+
+  .hero .eyebrow {
+    display: inline-block;
+    background: rgba(255,255,255,0.38);
+    backdrop-filter: blur(8px);
+    padding: 0.35rem 1rem;
+    border-radius: 100px;
+    border: 1px solid rgba(255,255,255,0.45);
+  }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 300;
+    color: var(--text);
+    line-height: 1.05;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero h1 em { font-style: italic; color: var(--aegean); }
+
+  .hero-sub {
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 2rem;
+  }
+
+  .hero-pills {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    background: rgba(59,122,158,0.1);
+    border: 1px solid rgba(59,122,158,0.25);
+    color: var(--aegean);
+    padding: 0.45rem 1.1rem;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+  }
+
+  /* ── SECTIONS ── */
+  .section { padding: 6rem 2rem; }
+  .container { max-width: 1060px; margin: 0 auto; }
+  .narrow { max-width: 660px; margin: 0; }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--text);
+    margin-bottom: 1.4rem;
+  }
+
+  h2 em { font-style: italic; color: var(--aegean); }
+
+  h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 0.6rem;
+  }
+
+  p { color: var(--mid); font-size: 0.92rem; margin-bottom: 1.1rem; line-height: 1.8; }
+  p:last-child { margin-bottom: 0; }
+
+  .pull {
+    margin: 2.5rem 0;
+    padding-left: 1.4rem;
+    border-left: 1px solid var(--aegean-light);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--mid);
+    line-height: 1.55;
+  }
+
+  /* ── INTRO ── */
+  .intro { background: var(--white); }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .intro-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 180px;
+    gap: 8px;
+  }
+
+  .intro-photos .ph { border-radius: 4px; overflow: hidden; }
+  .intro-photos .ph img { width:100%; height:100%; object-fit:cover; display:block; }
+  .intro-photos .ph:first-child { grid-column: 1 / -1; height: 220px; }
+
+  /* ── PHOTO STRIP ── */
+  .photo-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 320px;
+    gap: 4px;
+  }
+
+  .photo-strip .ps { position: relative; overflow: hidden; }
+  .photo-strip .ps img { width:100%; height:100%; object-fit:cover; display:block; transition: transform 0.5s; }
+  .photo-strip .ps:hover img { transform: scale(1.04); }
+  .photo-strip .ps-label {
+    position: absolute; bottom: 1rem; left: 1rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+  }
+
+  /* ── PHASES ── */
+  .phases-section { background: var(--sky); padding: 6rem 2rem; }
+
+  .phases-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--aegean-light);
+    border: 1px solid var(--aegean-light);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 3rem;
+  }
+
+  .phase {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    transition: background 0.25s;
+  }
+
+  .phase:hover { background: var(--sky); }
+
+  .phase-n {
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--aegean);
+    opacity: 0.65;
+    margin-bottom: 0.8rem;
+  }
+
+  .phase-loc {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  .phase-name {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--aegean);
+    margin-bottom: 1rem;
+  }
+
+  .phase p { font-size: 0.82rem; color: var(--mid); margin: 0; line-height: 1.55; }
+
+  /* ── PRACTICE LIST ── */
+  .pillars-section { background: var(--white); }
+
+  .practice-list {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid rgba(59,122,158,0.12);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .practice-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem 1.8rem;
+    gap: 0.8rem;
+    position: relative;
+    border-right: 1px solid rgba(59,122,158,0.1);
+    transition: background 0.25s;
+  }
+
+  .practice-item:last-child { border-right: none; }
+  .practice-item:hover { background: var(--sky); }
+
+  .practice-accent {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--aegean-light);
+    line-height: 1;
+    margin-bottom: -0.4rem;
+  }
+
+  .practice-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--aegean);
+    line-height: 1.2;
+  }
+
+  .practice-sub {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .practice-rule {
+    width: 2rem;
+    height: 1px;
+    background: var(--aegean-light);
+  }
+
+  .practice-desc { font-size: 0.85rem; color: var(--mid); line-height: 1.75; }
+  .practice-desc p { margin: 0; }
+
+  /* ── POWER VS FORCE SECTION ── */
+  .pvf-section { background: var(--white); padding: 5rem 2rem; }
+
+  .pvf-grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .pvf-image {
+    border-radius: 4px;
+    overflow: hidden;
+    height: 560px;
+    position: sticky;
+    top: 2rem;
+  }
+
+  .pvf-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .pvf-principles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+
+  .pvf-principle {
+    background: var(--sky);
+    border-radius: 4px;
+    padding: 0.8rem 1rem;
+  }
+
+  .pvf-principle-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--aegean);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.2rem;
+  }
+
+  .pvf-principle p { font-size: 0.75rem; color: var(--mid); margin: 0; line-height: 1.5; }
+
+  /* ── PHOTO MOSAIC ── */
+  .mosaic-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 8px;
+    height: 320px;
+    margin-bottom: 2.5rem;
+  }
+
+  .m-cell { border-radius: 4px; overflow: hidden; }
+  .m-cell img { width:100%; height:100%; object-fit:cover; display:block; transition: transform 0.5s; }
+  .m-cell:hover img { transform: scale(1.03); }
+
+  /* ── ITINERARY ── */
+  .schedule-section { background: var(--sky); padding: 6rem 2rem; }
+
+  .days-grid {
+    display: grid;
+    gap: 1px;
+    background: rgba(59,122,158,0.12);
+    border: 1px solid rgba(59,122,158,0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 3rem;
+  }
+
+  .dg-item {
+    display: grid;
+    grid-template-columns: 80px 1fr 140px;
+    gap: 0;
+    background: var(--white);
+    align-items: stretch;
+    transition: background 0.2s;
+  }
+
+  .dg-item:hover { background: rgba(235,244,248,0.7); }
+
+  .dg-num {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem 0;
+    border-right: 1px solid rgba(59,122,158,0.1);
+  }
+
+  .dg-n {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--aegean-light);
+  }
+
+  .dg-item.is-retreat .dg-n { color: var(--aegean); }
+  .dg-item.is-free .dg-n { color: var(--olive); }
+  .dg-item.is-travel .dg-n { color: rgba(90,107,118,0.4); }
+
+  .dg-body {
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+    border-right: 1px solid rgba(59,122,158,0.1);
+  }
+
+  .dg-date-loc {
+    display: flex;
+    gap: 0.6rem;
+    align-items: baseline;
+    margin-bottom: 0.1rem;
+  }
+
+  .dg-date {
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--aegean);
+    font-weight: 500;
+  }
+
+  .dg-loc {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mid);
+    opacity: 0.5;
+  }
+
+  .dg-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.18rem;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  .dg-desc {
+    font-size: 0.8rem;
+    color: var(--mid);
+    line-height: 1.6;
+    margin-top: 0.15rem;
+  }
+
+  .dg-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  .dg-badge {
+    font-size: 0.58rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--aegean);
+    background: var(--sky);
+    padding: 0.3rem 0.7rem;
+    border-radius: 100px;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  .dg-item.is-free .dg-badge { color: var(--olive); background: rgba(122,148,96,0.1); }
+  .dg-item.is-travel .dg-badge { color: var(--mid); background: rgba(90,107,118,0.08); }
+
+  /* ── DRY FAST ── */
+  .fast-section { background: var(--aegean); color: #fff; padding: 5rem 2rem; }
+
+  .fast-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .fast-section h2 { color: #fff; }
+  .fast-section h2 em { color: rgba(255,255,255,0.6); font-style: italic; }
+  .fast-section p { color: rgba(255,255,255,0.7); }
+  .fast-section .eyebrow { color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.15); }
+
+  .fast-circle {
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .fast-circle::before {
+    content: '';
+    position: absolute; inset: 10px;
+    border-radius: 50%;
+    border: 1px dashed rgba(255,255,255,0.12);
+  }
+
+  .fast-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1;
+  }
+
+  .fast-unit {
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+  }
+
+  /* ── INVESTICE ── */
+  .includes-section { background: var(--white); }
+
+  .inv-grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .inv-block {
+    background: var(--sky);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(59,122,158,0.1);
+  }
+
+  .inv-block-header {
+    background: var(--aegean);
+    color: #fff;
+    padding: 1rem 1.4rem;
+  }
+
+  .inv-block-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+
+  .inv-block-total {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.1;
+  }
+
+  .inv-per {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    font-family: 'Jost', sans-serif;
+  }
+
+  .inv-list {
+    list-style: none;
+    padding: 0.8rem 0;
+  }
+
+  .inv-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.8rem;
+    padding: 0.5rem 1.4rem;
+    border-bottom: 1px solid rgba(59,122,158,0.08);
+    font-size: 0.8rem;
+  }
+
+  .inv-list li:last-child { border-bottom: none; }
+
+  .inv-item { color: var(--mid); flex: 1; line-height: 1.4; }
+
+  .inv-price {
+    color: var(--aegean);
+    font-weight: 500;
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+
+  .inv-alt {
+    color: var(--mid);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.75rem;
+  }
+
+  .inv-note {
+    grid-column: 1 / -1;
+    background: var(--gold-light);
+    border: 1px solid rgba(184,151,58,0.2);
+    border-radius: 6px;
+    padding: 1rem 1.4rem;
+    font-size: 0.8rem;
+    color: var(--mid);
+  }
+
+  /* ── CLOSING / CTA ── */
+  .cta { background: var(--sand); text-align: center; padding: 7rem 2rem; }
+  .cta h2 { margin-bottom: 1.5rem; font-size: clamp(2.2rem, 5vw, 3.8rem); }
+  .cta p { max-width: 500px; margin: 0 auto 1rem; }
+  .cta-pull {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-style: italic;
+    color: var(--aegean);
+    margin-bottom: 1.5rem !important;
+    line-height: 1.5;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--text);
+    color: rgba(255,255,255,0.3);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* ── LANGUAGE ── */
+  [lang-content] { display: none; }
+  body.cs [lang-content="cs"] { display: block; }
+  body.en [lang-content="en"] { display: block; }
+  body.cs .cs-inline { display: inline; }
+  body.en .cs-inline { display: none; }
+  body.cs .en-inline { display: none; }
+  body.en .en-inline { display: inline; }
+
+  /* Inline lang spans */
+  .cs-inline, .en-inline { display: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .intro-grid, .fast-inner, .includes-grid, .pvf-grid { grid-template-columns: 1fr; }
+    .phases-grid { grid-template-columns: 1fr 1fr; }
+    .inv-grid { grid-template-columns: 1fr; }
+    .practice-list { grid-template-columns: 1fr; border-radius: 0; }
+    .practice-item { border-right: none; border-bottom: 1px solid rgba(59,122,158,0.1); }
+    .practice-item:last-child { border-bottom: none; }
+    .photo-strip { grid-template-columns: 1fr 1fr; height: auto; }
+    .photo-strip .ps { height: 180px; }
+    .mosaic-2 { grid-template-columns: 1fr; height: auto; }
+    .m-cell { height: 200px; }
+    .lang-toggle { top: 0.8rem; right: 0.8rem; }
+    .pvf-image { height: 280px; position: static; }
+    .pvf-principles { grid-template-columns: 1fr 1fr; }
+    .dg-item { grid-template-columns: 56px 1fr; }
+    .dg-tag { display: none; }
+    .dg-n { font-size: 1.8rem; }
+  }
+</style>
+</head>
+<body class="cs">
+
+<!-- LANG TOGGLE -->
+<div class="lang-toggle">
+  <button class="lang-btn active" onclick="setLang('cs')">CZ</button>
+  <button class="lang-btn" onclick="setLang('en')">EN</button>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-img"></div>
+  <div class="hero-content">
+    <p class="eyebrow">
+      <span class="cs-inline">Transformační cesta posvátným Řeckem</span>
+      <span class="en-inline">A Transformational Journey Through Sacred Greece</span>
+    </p>
+    <h1>
+      <span class="cs-inline">Kde bohové<br><em>stále promlouvají</em></span>
+      <span class="en-inline">Where the<br>Gods <em>Still Speak</em></span>
+    </h1>
+    <p class="hero-sub">
+      <span class="cs-inline">Atény · Delfi · Meteora · Oros Olympos</span>
+      <span class="en-inline">Athens · Delphi · Meteora · Oros Olympos</span>
+    </p>
+    <div class="hero-pills">
+      <span class="pill">28. 9. – 7. 10. 2026</span>
+      <span class="pill cs-inline">4 posvátná místa</span>
+      <span class="pill en-inline">4 sacred sites</span>
+      <span class="pill cs-inline">7 dní retreatu</span>
+      <span class="pill en-inline">7 retreat days</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     INTRO (CZ)
+══════════════════════════════════════════ -->
+<section class="section intro">
+  <div class="container">
+    <div class="intro-grid">
+
+      <!-- CZ text -->
+      <div lang-content="cs">
+        <p class="eyebrow">Retreat</p>
+        <h2>Jsou místa, kde je snazší<br>si <em>vzpomenout</em>.</h2>
+        <p>Na to, kdo jsi. Na to, co víš. Na to, co skutečně chceš.</p>
+        <p>Řecko je takovým místem. Kolébka bohů, posvátná krajina, kde energie proudí jinak a vnitřní hlas je slyšet zřetelněji. Kde kameny pamatují a vzduch nese něco, co se slovy těžko pojmenovává.</p>
+        <p>Po dobu sedmi dní projdeme čtyřmi místy, která nesou každé svůj vlastní energetický podpis — od olivového háje a Kastalského pramene v Delfách, přes mnišské stezky zavěšené mezi nebem a zemí v Meteoře, průsmykem bohů na Olympu, až po Akropolis — oltář nad celým světem. Na každém z těchto míst se budeme zastavovat. Naslouchat. Nalaďovat.</p>
+        <p>Prostřednictvím meditací, channelingů, dechových a jiných cvičení či vědomé chůze v přírodě budeme postupně zjemňovat schopnost vnímat — sebe, své tužby, své vedení. Zvyšovat svou frekvenci. A nacházet cestu zpátky ke svému Zdroji.</p>
+        <p class="pull">Bohové nepromlouvají k těm, kdo spěchají. Promlouvají k těm, kdo se zastaví a naslouchají.</p>
+      </div>
+
+      <!-- EN text -->
+      <div lang-content="en">
+        <p class="eyebrow">The Retreat</p>
+        <h2>There are places where it is easier<br>to <em>remember</em>.</h2>
+        <p>Who you are. What you know. What you truly want.</p>
+        <p>Greece is one of those places. The cradle of the gods, a sacred landscape where energy flows differently and the inner voice is heard more clearly. Where the stones remember and the air carries something that words can barely name.</p>
+        <p>Over seven days we will move through four locations, each carrying its own energetic signature — from the olive grove and the Castalian Spring at Delphi, through the monks' trails suspended between heaven and earth at Meteora, the gorge of the gods on Olympus, all the way to the Acropolis — an altar above the entire world. At each of these places we will pause. Listen. Attune.</p>
+        <p>Through meditations, channelling, breathwork and other practices, and conscious walking in nature, we will gradually refine the ability to perceive — ourselves, our desires, our guidance. To raise our frequency. And to find our way back to the Source.</p>
+        <p class="pull">The gods do not speak to those who rush. They speak to those who stop and listen.</p>
+      </div>
+
+      <!-- Photos (shared) -->
+      <div class="intro-photos">
+        <div class="ph">
+          <img src="https://drive.google.com/thumbnail?id=1fyKzPGiruuR4I4Jp0vIGbpGzflHUf9ME&sz=w900" alt="Řecko retreat">
+        </div>
+        <div class="ph">
+          <img src="https://drive.google.com/thumbnail?id=1NmRA4NeX8uWNmls5onxv3PKfr0kDhnUp&sz=w500" alt="Řecko retreat">
+        </div>
+        <div class="ph">
+          <img src="https://drive.google.com/thumbnail?id=1tJNencxThEiHMJNScFU1E2YAfNT9Pe14&sz=w500" alt="Řecko retreat">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOUR PHASES
+══════════════════════════════════════════ -->
+<section class="section phases-section">
+  <div class="container">
+
+    <div lang-content="cs">
+      <p class="eyebrow">Cesta</p>
+      <h2>Čtyři posvátná místa.<br>Jeden <em>nepřerušený oblouk</em>.</h2>
+    </div>
+    <div lang-content="en">
+      <p class="eyebrow">The Journey</p>
+      <h2>Four sacred sites.<br>One <em>unbroken arc</em>.</h2>
+    </div>
+
+    <div class="phases-grid">
+      <div class="phase">
+        <div class="phase-n">
+          <span class="cs-inline">Fáze I · 29.–30. 9.</span>
+          <span class="en-inline">Phase I · Sep 29–30</span>
+        </div>
+        <div class="phase-loc"><span class="cs-inline">Delfi</span><span class="en-inline">Delphi</span></div>
+        <div class="phase-name">
+          <span class="cs-inline">Orákulum</span>
+          <span class="en-inline">Oracle</span>
+        </div>
+        <p lang-content="cs">Apollo promlouvá z pupku světa. Poutnická cesta olivovým hájem, očistný rituál u Kastalského pramene, setkání s oráklem.</p>
+        <p lang-content="en">Apollo speaks at the navel of the world. A pilgrim's walk through the olive grove, a purification ritual at the Castalian Spring, an encounter with the oracle.</p>
+      </div>
+      <div class="phase">
+        <div class="phase-n">
+          <span class="cs-inline">Fáze II · 1.–2. 10.</span>
+          <span class="en-inline">Phase II · Oct 1–2</span>
+        </div>
+        <div class="phase-loc">Meteora</div>
+        <div class="phase-name">
+          <span class="cs-inline">Vzestup</span>
+          <span class="en-inline">Ascent</span>
+        </div>
+        <p lang-content="cs">Zavěšeni mezi nebem a zemí na mnišských stezkách. Meditace u Jehlové skály. Nové já se krystalizuje ve vertikálním tichu.</p>
+        <p lang-content="en">Suspended between earth and sky on monks' trails. Meditation at the Needle Rock. The new self crystallises in vertical silence.</p>
+      </div>
+      <div class="phase">
+        <div class="phase-n">
+          <span class="cs-inline">Fáze III · 3.–4. 10.</span>
+          <span class="en-inline">Phase III · Oct 3–4</span>
+        </div>
+        <div class="phase-loc">Oros Olympos</div>
+        <div class="phase-name">
+          <span class="cs-inline">Božskost</span>
+          <span class="en-inline">Divinity</span>
+        </div>
+        <p lang-content="cs">Průsmyk bohů od Zeus Bath až k Dionysosovu chrámu. Koupel v posvátných pramenech nejvyšší řecké frekvence.</p>
+        <p lang-content="en">The gorge of the gods from Zeus Bath to the Temple of Dionysus. A ritual plunge in the sacred springs of the highest Greek frequency.</p>
+      </div>
+      <div class="phase">
+        <div class="phase-n">
+          <span class="cs-inline">Fáze IV · 5.–7. 10.</span>
+          <span class="en-inline">Phase IV · Oct 5–7</span>
+        </div>
+        <div class="phase-loc"><span class="cs-inline">Atény</span><span class="en-inline">Athens</span></div>
+        <div class="phase-name">
+          <span class="cs-inline">Ukotvení</span>
+          <span class="en-inline">Embodiment</span>
+        </div>
+        <p lang-content="cs">Akropolis jako závěrečný oltář. Integrace přistane. Nové já vstoupí do světa v uličkách Plaky.</p>
+        <p lang-content="en">The Acropolis as the final altar. Integration lands. The new self steps into the world through the lanes of Plaka.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip">
+  <div class="ps">
+    <img src="https://drive.google.com/thumbnail?id=1qyl224mHsEZCakrFEsfGNrRhgi6YdSyb&sz=w700" alt="Athens">
+    <span class="ps-label cs-inline">Atény</span><span class="ps-label en-inline">Athens</span>
+  </div>
+  <div class="ps">
+    <img src="https://drive.google.com/thumbnail?id=1NM7DTcKuyTotgOq0pVQyxgMIqqJsMf9m&sz=w700" alt="Delphi">
+    <span class="ps-label cs-inline">Delfi</span><span class="ps-label en-inline">Delphi</span>
+  </div>
+  <div class="ps">
+    <img src="https://drive.google.com/thumbnail?id=1dq8FF0zwVZqweHlMtFxyh9iETCU-4iVJ&sz=w700" alt="Meteora">
+    <span class="ps-label">Meteora</span>
+  </div>
+  <div class="ps">
+    <img src="https://drive.google.com/thumbnail?id=1m4VL-1egTyccZbsz7LUWdHjXzMk8OWec&sz=w700" alt="Oros Olympos">
+    <span class="ps-label">Oros Olympos</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     POWER VS FORCE
+══════════════════════════════════════════ -->
+<section class="pvf-section">
+  <div class="container">
+    <div class="pvf-grid">
+
+      <div class="pvf-image">
+        <img src="https://drive.google.com/thumbnail?id=1EJfq7Vhd9neG3tM7eDB9YYhhgC6sREBm&sz=w900" alt="Návrat ke Zdroji">
+      </div>
+
+      <div>
+        <div lang-content="cs">
+          <p class="eyebrow">Filozofie retreatu</p>
+          <h2>Návrat ke <em>Zdroji</em></h2>
+          <p>V každém z nás je vždypřítomna část, která ví. Říkáme jí různě — pravé já, vyšší já, duše, Zdroj. Je to místo, ze kterého přicházíme a ke kterému se navracíme. Se kterým jsme spojeni v každém okamžiku života.</p>
+          <p>Když jsme v souladu s tímto Zdrojem, něco se mění. Přestaneme bojovat s tím, co je. Energie začne plynout bez odporu. Intuice se zostří. Zažíváme pocity radosti, napojení, souladu a lásky. V tomto stavu se tužby, ty skutečné a hluboké, začínají naplňovat — ne proto, že jsme je vynutili, ale proto, že jsme jim přestali bránit.</p>
+          <p>Toto je stav Flow. Ne síla nad někým nebo něčím — ale síla, která tryská zevnitř, když jsme doma v sobě. V tomto stavu vše kolem nás hraje jako orchestr synchronizací. Věci se dějí lehce. Správní lidé přicházejí ve správný čas. Nápady plynou a cesty se otevírají. Vidíme možnosti tam, kde předtím zdánlivě nebyly možné.</p>
+          <p>Retreat je navržen jako prostor pro tento návrat ke Zdroji, k vlastnímu napojení. Řecká posvátná místa existovala po tisíciletí přesně pro toto setkání — člověka s jeho vlastním božstvím.</p>
+        </div>
+        <div lang-content="en">
+          <p class="eyebrow">Retreat Philosophy</p>
+          <h2>The Source <em>Within</em></h2>
+          <p>Within each of us there is an ever-present part that knows. We call it by different names — the true self, the higher self, the soul, the Source. It is the place we come from and the place we return to. A place we are connected to in every moment of life.</p>
+          <p>When we align with this Source, something shifts. We stop fighting what is. Energy begins to flow without resistance. Intuition sharpens. We experience feelings of joy, connection, harmony and love. In this state, our deepest and most genuine desires begin to fulfil themselves — not because we forced them, but because we stopped standing in their way.</p>
+          <p>This is the state of Flow. Not power over something or someone — but the power that springs from within when we are at home in ourselves. In this state, everything around us plays like an orchestra of synchronicities. Things happen with ease. The right people arrive at the right time. Ideas flow and paths open. We see possibilities where none seemed to exist before.</p>
+          <p>The retreat is designed as a space for this return — to the Source, to our own connection. Greece's sacred sites have existed for millennia for precisely this meeting — of a person with their own divinity.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PHOTO — DELPHI + OLYMPOS
+══════════════════════════════════════════ -->
+<div class="photo-strip" style="height:280px;">
+  <div class="ps">
+    <img src="https://drive.google.com/thumbnail?id=180fv_ljz86o77czBwOnHMe2ALqdig3Qn&sz=w700" alt="The Erechtheion">
+    <span class="ps-label">The Erechtheion</span>
+  </div>
+  <div class="ps">
+    <img src="https://drive.google.com/thumbnail?id=1nwu0onx0StR_dctUcFKxKoQ3qmGWyCqz&sz=w700" alt="Moni Rousanou">
+    <span class="ps-label">Moni Rousanou</span>
+  </div>
+  <div class="ps">
+    <img src="https://drive.google.com/thumbnail?id=1ddQDAviMfNIAVXW2Xs5UIjXsNk4g5nf5&sz=w700" alt="Odeon of Herodes Atticus">
+    <span class="ps-label">Odeon of Herodes Atticus</span>
+  </div>
+  <div class="ps">
+    <img src="https://drive.google.com/thumbnail?id=1SL5F0N8R3SqMQRnATg4Sn92FMI2l0CMj&sz=w700" alt="Krisajské údolí">
+    <span class="ps-label cs-inline">Krisajské údolí</span><span class="ps-label en-inline">Crisaean Valley</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PRACTICE LIST
+══════════════════════════════════════════ -->
+<section class="section pillars-section">
+  <div class="container">
+
+    <div lang-content="cs">
+      <p class="eyebrow">Tři pilíře</p>
+      <h2>Otevření se <em>Dobru</em>.</h2>
+      <p style="margin-bottom:0;">Dobro není cíl, ke kterému směřujeme. Je to náš přirozený stav — místo, ze kterého tvoříme to, co chceme. Tři pilíře retreatu jsou třemi cestami, jak se k tomuto stavu znovu přiblížit, jak jej dosvědčit a jak tento stav nalézat i v běžném životě.</p>
+    </div>
+    <div lang-content="en">
+      <p class="eyebrow">Three Pillars</p>
+      <h2>Opening to <em>Well-Being</em>.</h2>
+      <p style="margin-bottom:0;">Well-Being is not a goal we are heading towards. It is our natural state — the place from which we create what we want. The three pillars of the retreat are three paths to approach this state once more, to witness it, and to find it in everyday life.</p>
+    </div>
+
+    <div class="practice-list">
+
+      <div class="practice-item">
+        <div class="practice-accent">I</div>
+        <div class="practice-sub cs-inline">Návrat ke své síle</div>
+        <div class="practice-sub en-inline">Return to Your Strength</div>
+        <div class="practice-title">Power vs. Force</div>
+        <div class="practice-rule"></div>
+        <div class="practice-desc">
+          <p lang-content="cs">Naučíme se rozlišovat, kdy jednáme z vnitřní síly — a kdy z tlaku, strachu nebo odporu. Skrze práci s tělem, dechem a filozofií Flow přejdeme od vyčerpávajícího úsilí k přirozenému stavu lehkosti. Stavu, ve kterém nápady přicházejí samy, hojnost plyne bez námahy a harmonie je přirozeným důsledkem toho, kým jsme — ne toho, co děláme. Prozkoumáme také zásadní rozdíl mezi jednáním z inspirace a jednáním z motivace.</p>
+          <p lang-content="en">We learn to distinguish when we act from inner strength — and when from pressure, fear or resistance. Through bodywork, breathwork and the philosophy of Flow, we move from exhausting effort towards a natural state of ease. A state in which ideas arrive on their own, abundance flows without effort and harmony is the natural consequence of who we are — not what we do. We will also explore the essential difference between acting from inspiration and acting from motivation.</p>
+        </div>
+      </div>
+
+      <div class="practice-item">
+        <div class="practice-accent">II</div>
+        <div class="practice-sub cs-inline">Tvoření z radosti</div>
+        <div class="practice-sub en-inline">Creating from Joy</div>
+        <div class="practice-title cs-inline">Vědomá manifestace</div>
+        <div class="practice-title en-inline">Conscious Manifestation</div>
+        <div class="practice-rule"></div>
+        <div class="practice-desc">
+          <p lang-content="cs">Manifestace není o přání — je o vědomém naladění na to, co chceme přivést do života. Na posvátných místech, kde energie proudí jinak, prozkoumáme, jak jasnost záměru, uvolnění těla a přítomnost mysli otevírají prostor pro přirozené stávání se. Každé místo retreatu nabídne svůj vlastní meditační a channelingový kontejner pro tuto práci. Ukážeme si jak se otevřít proudu hojnosti a přitáhnout si do života to, co chceme.</p>
+          <p lang-content="en">Manifestation is not about wishing — it is about consciously aligning with what we want to bring into life. At sacred sites where energy flows differently, we explore how clarity of intent, a released body and a present mind open space for natural becoming. Each retreat location offers its own meditation and channelling container for this work. We will show how to open to the flow of abundance and attract into our lives what we truly want.</p>
+        </div>
+      </div>
+
+      <div class="practice-item">
+        <div class="practice-accent">III</div>
+        <div class="practice-sub cs-inline">Naslouchání vnitřnímu kompasu</div>
+        <div class="practice-sub en-inline">Listening to Your Inner Compass</div>
+        <div class="practice-title cs-inline">Zvýšená intuice</div>
+        <div class="practice-title en-inline">Heightened Intuition</div>
+        <div class="practice-rule"></div>
+        <div class="practice-desc">
+          <p lang-content="cs">Intuice není náhoda — je to jazyk, který lze naučit. Prostřednictvím meditací, channelingových sezení a somatoneurologických cvičení budeme postupně zjemňovat schopnost vnímat tichá vodítka — ze svého těla, ze svého vyššího já, z bohů a předků. Řecká posvátná místa tento proces přirozeně zesilují. Našim jediným úkolem je utišit svou mysl, zrelaxovat tělo a nechat pracovat náš vnitřní kompas.</p>
+          <p lang-content="en">Intuition is not chance — it is a language that can be learned. Through meditations, channelling sessions and somatic neurological exercises, we gradually refine the ability to perceive quiet guidance — from our body, our higher self, from the gods and ancestors. Greece's sacred sites naturally amplify this process. Our only task is to quiet the mind, relax the body and let our inner compass do its work.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     DRY FAST
+══════════════════════════════════════════ -->
+<section class="fast-section">
+  <div class="fast-inner">
+
+    <div lang-content="cs">
+      <p class="eyebrow">Volitelná praxe</p>
+      <h2>Suchý půst:<br><em>očista těla i mysli</em>.</h2>
+      <p>Součástí retreatu je možnost dobrovolně podstoupit 36hodinový suchý půst — bez jídla i bez vody. Tato praxe hluboce čistí fyzické tělo, zostřuje mentální jasnost a otevírá prostor pro větší napojení, kreativitu a vnitřní ticho.</p>
+      <p>Každá fáze retreatu je ideálním prostorem pro tuto zkušenost. Pro ty, kdo preferují závěr cesty, poskytuje Litochoro u paty Olympu ideální podmínky — příroda, hluboký klid a absence vnějšího ruchu.</p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.4); font-style:italic;">Suchý půst je zcela dobrovolný a každý jej podstupuje na vlastní uvážení.</p>
+    </div>
+
+    <div lang-content="en">
+      <p class="eyebrow">Optional Practice</p>
+      <h2>The dry fast:<br><em>cleansing body and mind</em>.</h2>
+      <p>As part of the retreat, participants have the option to voluntarily undertake a 36-hour dry fast — abstaining from both food and water. This practice deeply cleanses the physical body, sharpens mental clarity and opens space for greater connection, creativity and inner stillness.</p>
+      <p>Each phase of the retreat offers an ideal space for this experience. For those who prefer the end of the journey, Litochoro at the foot of Olympus provides ideal conditions — nature, deep stillness and the absence of outside distractions.</p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.4); font-style:italic;">The dry fast is entirely voluntary and undertaken at each participant's own discretion.</p>
+    </div>
+
+    <div style="border-radius:6px; overflow:hidden; height:320px;">
+      <img src="https://drive.google.com/thumbnail?id=19zFh-oRzb6g1n1VJZzEEvVaAc9-dJIyw&sz=w800" alt="Suchý půst" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(0.85);">
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ITINERARY
+══════════════════════════════════════════ -->
+<section class="schedule-section">
+  <div class="container">
+
+    <div lang-content="cs">
+      <p class="eyebrow">Itinerář</p>
+      <h2>Cesta den <em>po dni</em>.</h2>
+    </div>
+    <div lang-content="en">
+      <p class="eyebrow">Itinerary</p>
+      <h2>The journey <em>day by day</em>.</h2>
+    </div>
+
+    <div class="days-grid">
+
+      <!-- 0 -->
+      <div class="dg-item is-travel">
+        <div class="dg-num"><div class="dg-n">0</div></div>
+        <div class="dg-body">
+          <div class="dg-date-loc">
+            <span class="dg-date cs-inline">28. 9.</span>
+            <span class="dg-date en-inline">Sep 28</span>
+            <span class="dg-loc cs-inline">Atény</span>
+            <span class="dg-loc en-inline">Athens</span>
+          </div>
+          <div class="dg-title cs-inline">Přílet · První večer společně</div>
+          <div class="dg-title en-inline">Arrival · First evening together</div>
+          <div class="dg-desc cs-inline">Příjezd, ubytování, klidné zahájení cesty.</div>
+          <div class="dg-desc en-inline">Arrival, check-in, a quiet opening to the journey.</div>
+        </div>
+        <div class="dg-tag"><span class="dg-badge cs-inline">Příjezd</span><span class="dg-badge en-inline">Arrival</span></div>
+      </div>
+
+      <!-- 1 -->
+      <div class="dg-item is-retreat">
+        <div class="dg-num"><div class="dg-n">1</div></div>
+        <div class="dg-body">
+          <div class="dg-date-loc">
+            <span class="dg-date cs-inline">29. 9.</span>
+            <span class="dg-date en-inline">Sep 29</span>
+            <span class="dg-loc cs-inline">Atény → Delfi</span>
+            <span class="dg-loc en-inline">Athens → Delphi</span>
+          </div>
+          <div class="dg-title cs-inline">Poutní cesta Krisajským údolím</div>
+          <div class="dg-title en-inline">Pilgrim's Walk Through the Crisaean Valley</div>
+          <div class="dg-desc cs-inline">Starobylý olivový háj, smích v zeleném moři světla, večerní channeling a první přivítání od Apolla.</div>
+          <div class="dg-desc en-inline">The ancient olive grove, laughter in a green sea of light, evening channelling and a first greeting from Apollo.</div>
+        </div>
+        <div class="dg-tag"><span class="dg-badge cs-inline">Orákulum</span><span class="dg-badge en-inline">Oracle</span></div>
+      </div>
+
+      <!-- 2 -->
+      <div class="dg-item is-retreat">
+        <div class="dg-num"><div class="dg-n">2</div></div>
+        <div class="dg-body">
+          <div class="dg-date-loc">
+            <span class="dg-date cs-inline">30. 9.</span>
+            <span class="dg-date en-inline">Sep 30</span>
+            <span class="dg-loc cs-inline">Delfi</span><span class="dg-loc en-inline">Delphi</span>
+          </div>
+          <div class="dg-title cs-inline">Omphalos, jeden z Shivových kamenů</div>
+          <div class="dg-title en-inline">Omphalos, One of the Shiva Stones</div>
+          <div class="dg-desc cs-inline">Rituální očištění u Kastálského pramene před vstupem k orákulu. Místo, kde se světy dotýkají. Meditace u Omphalos kamene a otevření se vzpomínkám z předchozích životů.</div>
+          <div class="dg-desc en-inline">Ritual purification at the Castalian Spring before entering the oracle. Where worlds touch. Meditation at the Omphalos stone and opening to memories from past lives.</div>
+        </div>
+        <div class="dg-tag"><span class="dg-badge cs-inline">Iniciace</span><span class="dg-badge en-inline">Initiation</span></div>
+      </div>
+
+      <!-- 3 -->
+      <div class="dg-item is-retreat">
+        <div class="dg-num"><div class="dg-n">3</div></div>
+        <div class="dg-body">
+          <div class="dg-date-loc">
+            <span class="dg-date cs-inline">1. 10.</span>
+            <span class="dg-date en-inline">Oct 1</span>
+            <span class="dg-loc cs-inline">Delfi → Meteora (Kastraki Village)</span>
+            <span class="dg-loc en-inline">Delphi → Meteora (Kastraki Village)</span>
+          </div>
+          <div class="dg-title cs-inline">Meteora — Kde nebe sahá na zem</div>
+          <div class="dg-title en-inline">Meteora — Where Heaven Touches Earth</div>
+          <div class="dg-desc cs-inline">První setkání s Adrachti — skalním pilířem čistého vertikálního světla. Ideální prostor pro hluboký alignment a napojení na vyšší frekvence.</div>
+          <div class="dg-desc en-inline">First encounter with Adrachti — a rock pillar of pure vertical light. An ideal space for deep alignment and connection to higher frequencies.</div>
+        </div>
+        <div class="dg-tag"><span class="dg-badge cs-inline">Vzestup</span><span class="dg-badge en-inline">Ascent</span></div>
+      </div>
+
+      <!-- 4 -->
+      <div class="dg-item is-retreat">
+        <div class="dg-num"><div class="dg-n">4</div></div>
+        <div class="dg-body">
+          <div class="dg-date-loc">
+            <span class="dg-date cs-inline">2. 10.</span>
+            <span class="dg-date en-inline">Oct 2</span>
+            <span class="dg-loc cs-inline">Meteora</span><span class="dg-loc en-inline">Meteora</span>
+          </div>
+          <div class="dg-title cs-inline">Mnišskými stezkami až k vrcholkům 6 klášterů</div>
+          <div class="dg-title en-inline">Monks' Trails to the Summits of 6 Monasteries</div>
+          <div class="dg-desc cs-inline">Průzkum klášterů vlastním tempem — každý zákout skrývá odpovědi na otázky, které mniši nesou po staletí. Večer oslava našeho vzestupu v Taverna Efrosino.</div>
+          <div class="dg-desc en-inline">Exploring the monasteries at your own pace — every corner holds answers to questions monks have carried for centuries. Evening celebration of our ascent at Taverna Efrosino.</div>
+        </div>
+        <div class="dg-tag"><span class="dg-badge cs-inline">Ticho</span><span class="dg-badge en-inline">Silence</span></div>
+      </div>
+
+      <!-- 5 -->
+      <div class="dg-item is-retreat">
+        <div class="dg-num"><div class="dg-n">5</div></div>
+        <div class="dg-body">
+          <div class="dg-date-loc">
+            <span class="dg-date cs-inline">3. 10.</span>
+            <span class="dg-date en-inline">Oct 3</span>
+            <span class="dg-loc cs-inline">Kastraki Village → Oros Olympos (Litochoro)</span>
+            <span class="dg-loc en-inline">Kastraki Village → Oros Olympos (Litochoro)</span>
+          </div>
+          <div class="dg-title cs-inline">Příjezd pod Olymp — domov bohů</div>
+          <div class="dg-title en-inline">Arrival at Olympus — Home of the Gods</div>
+          <div class="dg-desc cs-inline">Přítomnost bohů je zde hmatatelná. Večerní channeling — kdo je otevřen, ten naslouchá. Zprávy přicházejí k těm, kdo je očekávají.</div>
+          <div class="dg-desc en-inline">The presence of the gods is palpable here. Evening channelling — those who are open, listen. Messages come to those who await them.</div>
+        </div>
+        <div class="dg-tag"><span class="dg-badge cs-inline">Božskost</span><span class="dg-badge en-inline">Divinity</span></div>
+      </div>
+
+      <!-- 6 -->
+      <div class="dg-item is-retreat">
+        <div class="dg-num"><div class="dg-n">6</div></div>
+        <div class="dg-body">
+          <div class="dg-date-loc">
+            <span class="dg-date cs-inline">4. 10.</span>
+            <span class="dg-date en-inline">Oct 4</span>
+            <span class="dg-loc cs-inline">Oros Olympos</span><span class="dg-loc en-inline">Oros Olympos</span>
+          </div>
+          <div class="dg-title cs-inline">Výstup soutěskou Enipeas až k úpatí Mytikas</div>
+          <div class="dg-title en-inline">Ascent Through the Enipeas Gorge to the Foot of Mytikas</div>
+          <div class="dg-desc cs-inline">Země bohů. Zeus Bath, Dionýsův chrám a procházka po posvátné půdě. Smích mezi horskými vrcholy i rovinami vědomí.</div>
+          <div class="dg-desc en-inline">Land of the gods. Zeus Bath, the Temple of Dionysus and a walk on sacred ground. Laughter between mountain peaks and planes of consciousness.</div>
+        </div>
+        <div class="dg-tag"><span class="dg-badge cs-inline">Znovuzrození</span><span class="dg-badge en-inline">Rebirth</span></div>
+      </div>
+
+      <!-- 7 -->
+      <div class="dg-item is-retreat">
+        <div class="dg-num"><div class="dg-n">7</div></div>
+        <div class="dg-body">
+          <div class="dg-date-loc">
+            <span class="dg-date cs-inline">5. 10.</span>
+            <span class="dg-date en-inline">Oct 5</span>
+            <span class="dg-loc cs-inline">Litochoro → Atény</span>
+            <span class="dg-loc en-inline">Litochoro → Athens</span>
+          </div>
+          <div class="dg-title cs-inline">Akropolis — poslední oltář transformativní poutě</div>
+          <div class="dg-title en-inline">Acropolis — Final Altar of the Transformative Pilgrimage</div>
+          <div class="dg-desc cs-inline">Uzavření řecké poutě na posvátné půdě zasvěcené bohyni Athéně. Poslední zprávy od průvodců, andělů, bohů a bohyní. Oslava toho, čím jsme — v uličkách Plaky.</div>
+          <div class="dg-desc en-inline">Closing the Greek pilgrimage on sacred ground dedicated to the goddess Athena. Final messages from guides, angels, gods and goddesses. A celebration of who we are — through the lanes of Plaka.</div>
+        </div>
+        <div class="dg-tag"><span class="dg-badge cs-inline">Ukotvení</span><span class="dg-badge en-inline">Embodiment</span></div>
+      </div>
+
+      <!-- free -->
+      <div class="dg-item is-free">
+        <div class="dg-num"><div class="dg-n">+</div></div>
+        <div class="dg-body">
+          <div class="dg-date-loc">
+            <span class="dg-date cs-inline">6. 10.</span>
+            <span class="dg-date en-inline">Oct 6</span>
+            <span class="dg-loc cs-inline">Mys Sounion</span>
+            <span class="dg-loc en-inline">Cape Sounion</span>
+          </div>
+          <div class="dg-title cs-inline">Poseidonův chrám — západ slunce nad Egejským mořem</div>
+          <div class="dg-title en-inline">Temple of Poseidon — Sunset Over the Aegean Sea</div>
+          <div class="dg-desc cs-inline">Tam, kde moře splývá s nebem. Poseidon uzavírá kruh a zároveň otvírá nové možnosti.</div>
+          <div class="dg-desc en-inline">Where the sea merges with the sky. Poseidon closes the circle and opens new possibilities.</div>
+        </div>
+        <div class="dg-tag"><span class="dg-badge cs-inline">Volno</span><span class="dg-badge en-inline">Free</span></div>
+      </div>
+
+      <!-- departure -->
+      <div class="dg-item is-travel">
+        <div class="dg-num"><div class="dg-n">✈</div></div>
+        <div class="dg-body">
+          <div class="dg-date-loc">
+            <span class="dg-date cs-inline">7. 10.</span>
+            <span class="dg-date en-inline">Oct 7</span>
+            <span class="dg-loc cs-inline">Atény</span>
+            <span class="dg-loc en-inline">Athens</span>
+          </div>
+          <div class="dg-title cs-inline">Odlet · Poslední společné ráno</div>
+          <div class="dg-title en-inline">Departure · Last morning together</div>
+          <div class="dg-desc cs-inline">Odjezd na letiště, odlet domů.</div>
+          <div class="dg-desc en-inline">Transfer to the airport, flight home.</div>
+        </div>
+        <div class="dg-tag"><span class="dg-badge cs-inline">Odlet</span><span class="dg-badge en-inline">Departure</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     INVESTICE
+══════════════════════════════════════════ -->
+<section class="section includes-section">
+  <div class="container">
+
+    <div lang-content="cs">
+      <p class="eyebrow">Investice</p>
+      <h2>Transparentní <em>přehled nákladů</em>.</h2>
+      <p>Uvedené ceny jsou orientační. Záloha ve výši 848 € na osobu bude vyžádána předem — zahrnuje honorář facilitátorů, jejich dopravu a stravu a předplacené vstupy. Finální cena se následně upraví podle skutečných nákladů, vše transparentně doloženo.</p>
+      <p>Ubytování bude upřesněno po vzájemné dohodě — rezervaci však vždy zajišťují účastníci. Doprava, strava a některé vstupy v Řecku jsou hrazeny hotově na místě.</p>
+    </div>
+    <div lang-content="en">
+      <p class="eyebrow">Investment</p>
+      <h2>A transparent <em>cost overview</em>.</h2>
+      <p>The prices listed are indicative. A deposit of €848 per person will be required in advance — covering the facilitators' fee, their travel and meals, and pre-paid entry fees. The final amount will be adjusted according to actual costs, with full transparency.</p>
+      <p>Accommodation will be decided together — the reservation is always made by the participants. Transport, meals and some entry fees in Greece are paid in cash on site.</p>
+    </div>
+
+    <div class="inv-grid">
+
+      <!-- A: Záloha předem -->
+      <div class="inv-block">
+        <div class="inv-block-header">
+          <div class="inv-block-label cs-inline">A · Záloha předem</div>
+          <div class="inv-block-label en-inline">A · Advance Deposit</div>
+          <div class="inv-block-total">~ 848 € <span class="inv-per cs-inline">/ osobu</span><span class="inv-per en-inline">/ person</span></div>
+        </div>
+        <ul class="inv-list">
+          <li>
+            <span class="inv-item cs-inline">Honorář facilitátorů (2 100 € / 4)</span>
+            <span class="inv-item en-inline">Facilitators' fee (€2,100 / 4)</span>
+            <span class="inv-price">525 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Doprava facilitátorů (410 € / 4)</span>
+            <span class="inv-item en-inline">Facilitators' transport (€410 / 4)</span>
+            <span class="inv-price">103 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Strava facilitátorů (2 os. × 7 dní × 30 €) / 4</span>
+            <span class="inv-item en-inline">Facilitators' meals (2 × 7 days × €30) / 4</span>
+            <span class="inv-price">105 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Vstup — Delfi archeologický park (6 × 20 € / 4)</span>
+            <span class="inv-item en-inline">Entry — Delphi archaeological park (6 × €20 / 4)</span>
+            <span class="inv-price">30 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Vstup — Akropolis (6 × 30 € / 4)</span>
+            <span class="inv-item en-inline">Entry — Acropolis (6 × €30 / 4)</span>
+            <span class="inv-price">45 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Ostatní výdaje (160 € / 4)</span>
+            <span class="inv-item en-inline">Other expenses (€160 / 4)</span>
+            <span class="inv-price">40 €</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- B: Ubytování -->
+      <div class="inv-block">
+        <div class="inv-block-header">
+          <div class="inv-block-label cs-inline">B · Ubytování <span style="font-weight:300; opacity:0.6;">(rezervují účastníci)</span></div>
+          <div class="inv-block-label en-inline">B · Accommodation <span style="font-weight:300; opacity:0.6;">(booked by participants)</span></div>
+          <div class="inv-block-total">~ 342–395 € <span class="inv-per cs-inline">/ osobu</span><span class="inv-per en-inline">/ person</span></div>
+        </div>
+        <ul class="inv-list">
+          <li>
+            <span class="inv-item cs-inline">Atény — 1 noc (130–200 € / 6 osob) / 4</span>
+            <span class="inv-item en-inline">Athens — 1 night (€130–200 / 6 people) / 4</span>
+            <span class="inv-price">33–50 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Delfi — 2 noci (390–440 € / 6 osob) / 4</span>
+            <span class="inv-item en-inline">Delphi — 2 nights (€390–440 / 6 people) / 4</span>
+            <span class="inv-price">98–110 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Kastraki — 2 noci (410–440 € / 6 osob) / 4</span>
+            <span class="inv-item en-inline">Kastraki — 2 nights (€410–440 / 6 people) / 4</span>
+            <span class="inv-price">103–110 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Litochoro — 2 noci (300 € / 6 osob) / 4</span>
+            <span class="inv-item en-inline">Litochoro — 2 nights (€300 / 6 people) / 4</span>
+            <span class="inv-price">75 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Atény závěr — 1 noc (130–200 € / 6 osob) / 4</span>
+            <span class="inv-item en-inline">Athens final — 1 night (€130–200 / 6 people) / 4</span>
+            <span class="inv-price">33–50 €</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- C: Hotovost na místě -->
+      <div class="inv-block">
+        <div class="inv-block-header">
+          <div class="inv-block-label cs-inline">C · Hotovost na místě</div>
+          <div class="inv-block-label en-inline">C · Cash on Site</div>
+          <div class="inv-block-total">~ 435 € + <span class="inv-per cs-inline">kláštery / osobu</span><span class="inv-per en-inline">monasteries / person</span></div>
+        </div>
+        <ul class="inv-list">
+          <li>
+            <span class="inv-item cs-inline">Autobus Atény → Delfi</span>
+            <span class="inv-item en-inline">Bus Athens → Delphi</span>
+            <span class="inv-price">20 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Auto Delfi → Kastraki (320 € / 4)</span>
+            <span class="inv-item en-inline">Car Delphi → Kastraki (€320 / 4)</span>
+            <span class="inv-price">80 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Auto Kastraki → Litochoro (200 € / 4)</span>
+            <span class="inv-item en-inline">Car Kastraki → Litochoro (€200 / 4)</span>
+            <span class="inv-price">50 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Vlak Litochoro → Atény</span>
+            <span class="inv-item en-inline">Train Litochoro → Athens</span>
+            <span class="inv-price">35 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Taxi + ostatní (160 € / 4)</span>
+            <span class="inv-item en-inline">Taxi + other (€160 / 4)</span>
+            <span class="inv-price">40 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">Strava vlastní (~30 € / den / 7 dní)</span>
+            <span class="inv-item en-inline">Personal meals (~€30 / day / 7 days)</span>
+            <span class="inv-price">~ 210 €</span>
+          </li>
+          <li style="border-top: 2px solid rgba(59,122,158,0.15); margin-top: 0.3rem; padding-top: 0.8rem;">
+            <span class="inv-item cs-inline">Kláštery Meteora — organizovaná prohlídka</span>
+            <span class="inv-item en-inline">Meteora monasteries — guided tour</span>
+            <span class="inv-price">145 €</span>
+          </li>
+          <li>
+            <span class="inv-item cs-inline">nebo individuální vstupy (5 € / klášter)</span>
+            <span class="inv-item en-inline">or individual entry (€5 / monastery)</span>
+            <span class="inv-price inv-alt">dle výběru</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- letenky note -->
+      <div class="inv-note">
+        <span class="cs-inline">⚠ Letenky do/z Atén nejsou zahrnuty — každý účastník si je zajišťuje sám.</span>
+        <span class="en-inline">⚠ Flights to/from Athens are not included — each participant arranges their own.</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CLOSING
+══════════════════════════════════════════ -->
+<section class="cta">
+  <div lang-content="cs">
+    <p class="eyebrow">28. 9. – 7. 10. 2026</p>
+    <h2>Řecko je připraveno<br>tě <em>přivítat</em>.</h2>
+    <p class="cta-pull">Tam, kde energie plyne, hojnost přichází a radost je přirozeným stavem.</p>
+    <p>Čtyři posvátná místa. Jeden nepřerušený oblouk proměny.<br>Týden plný smíchu, radosti a zdrojové energie.</p>
+  </div>
+  <div lang-content="en">
+    <p class="eyebrow">Sep 28 – Oct 7, 2026</p>
+    <h2>Greece is ready<br>to <em>welcome you</em>.</h2>
+    <p class="cta-pull">Where energy flows, abundance arrives and joy is the natural state.</p>
+    <p>Four sacred sites. One unbroken arc of transformation.<br>A week full of laughter, joy and source energy.</p>
+  </div>
+</section>
+
+<footer>
+  Greek Transformational Retreat · 28. 9. – 7. 10. 2026 · Athens · Delphi · Meteora · Oros Olympos
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.body.className = lang;
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+    });
+  }
+
+  // Init
+  document.body.classList.add('cs');
+</script>
+</body>
+</html>
