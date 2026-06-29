@@ -578,6 +578,10 @@
     background: var(--aegean);
     color: #fff;
     padding: 1rem 1.4rem;
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .inv-block-label {
@@ -587,6 +591,12 @@
     color: rgba(255,255,255,0.7);
     margin-bottom: 0.3rem;
     font-weight: 500;
+  }
+
+  .inv-block-label span {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 0.75rem;
   }
 
   .inv-block-total {
@@ -1230,13 +1240,15 @@
     <div lang-content="cs">
       <p class="eyebrow">Investice</p>
       <h2>Transparentní <em>přehled nákladů</em>.</h2>
-      <p>Uvedené ceny jsou orientační. Záloha ve výši 848 € na osobu bude vyžádána předem — zahrnuje honorář facilitátorů, jejich dopravu a stravu a předplacené vstupy. Finální cena se následně upraví podle skutečných nákladů, vše transparentně doloženo.</p>
+      <p>Uvedené ceny jsou orientační. Záloha ve výši 948 € na osobu bude vyžádána předem — zahrnuje honorář facilitátorů, jejich dopravu a stravu a předplacené vstupy. Finální cena se následně upraví podle skutečných nákladů, vše transparentně doloženo.</p>
+      <p>Honorář Lukase M. činí 2 500 € (500 € na den) — díky dlouhodobému vztahu bude započítáno pouze 5 ze 7 dní.</p>
       <p>Ubytování bude upřesněno po vzájemné dohodě — rezervaci však vždy zajišťují účastníci. Doprava, strava a některé vstupy v Řecku jsou hrazeny hotově na místě.</p>
     </div>
     <div lang-content="en">
       <p class="eyebrow">Investment</p>
       <h2>A transparent <em>cost overview</em>.</h2>
-      <p>The prices listed are indicative. A deposit of €848 per person will be required in advance — covering the facilitators' fee, their travel and meals, and pre-paid entry fees. The final amount will be adjusted according to actual costs, with full transparency.</p>
+      <p>The prices listed are indicative. A deposit of €948 per person will be required in advance — covering the facilitators' fee, their travel and meals, and pre-paid entry fees. The final amount will be adjusted according to actual costs, with full transparency.</p>
+      <p>Lukas M.'s fee amounts to €2,500 (€500 per day) — due to our long-term relationship, only 5 out of 7 days will be charged.</p>
       <p>Accommodation will be decided together — the reservation is always made by the participants. Transport, meals and some entry fees in Greece are paid in cash on site.</p>
     </div>
 
@@ -1247,13 +1259,13 @@
         <div class="inv-block-header">
           <div class="inv-block-label cs-inline">A · Záloha předem</div>
           <div class="inv-block-label en-inline">A · Advance Deposit</div>
-          <div class="inv-block-total">~ 848 € <span class="inv-per cs-inline">/ osobu</span><span class="inv-per en-inline">/ person</span></div>
+          <div class="inv-block-total">~ 948 € <span class="inv-per cs-inline">/ osobu</span><span class="inv-per en-inline">/ person</span></div>
         </div>
         <ul class="inv-list">
           <li>
-            <span class="inv-item cs-inline">Honorář facilitátorů (2 100 € / 4)</span>
-            <span class="inv-item en-inline">Facilitators' fee (€2,100 / 4)</span>
-            <span class="inv-price">525 €</span>
+            <span class="inv-item cs-inline">Honorář facilitátorů (500 € × 5 dní / 4)</span>
+            <span class="inv-item en-inline">Facilitators' fee (€500 × 5 days / 4)</span>
+            <span class="inv-price">625 €</span>
           </li>
           <li>
             <span class="inv-item cs-inline">Doprava facilitátorů (410 € / 4)</span>
