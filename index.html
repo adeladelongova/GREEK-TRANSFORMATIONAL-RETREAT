@@ -656,6 +656,38 @@
     color: var(--mid);
   }
 
+  .inv-total {
+    grid-column: 1 / -1;
+    background: var(--aegean);
+    border-radius: 6px;
+    padding: 1.6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inv-total-text {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.85);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .inv-total-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1;
+  }
+
+  .inv-total-note {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.5);
+    font-style: italic;
+    text-align: right;
+  }
+
   /* ── CLOSING / CTA ── */
   .cta { background: var(--sand); text-align: center; padding: 7rem 2rem; }
   .cta h2 { margin-bottom: 1.5rem; font-size: clamp(2.2rem, 5vw, 3.8rem); }
@@ -1380,6 +1412,14 @@
             <span class="inv-price inv-alt">dle výběru</span>
           </li>
         </ul>
+      </div>
+
+      <!-- celková cena -->
+      <div class="inv-total">
+        <div class="inv-total-text">
+          <span class="cs-inline">Celková předpokládaná investice na osobu se pohybuje kolem <span class="inv-total-price">1 725–1 825 €</span></span>
+          <span class="en-inline">The estimated total investment per person is around <span class="inv-total-price">€1,725–1,825</span></span>
+        </div>
       </div>
 
       <!-- letenky note -->
